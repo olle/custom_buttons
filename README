@@ -1,12 +1,46 @@
-While browser default buttons are perfectly fine in many instances, there are times you want to give your buttons a little more class. Styling buttons to behave predictably in all browsers is rather tricky. 
 
-This project contains XHTML/CSS to change the visual style of both the <button> and <a> tag using a "button" class. It aims to use semantically correct markup and maintain the various button states (in supported browsers).
+CUSTOM BUTTONS (IMPLICIT)
 
-There are two different button examples -- a round button, and a more rectangular button. 
+This is a fork of the great work of Derek DeVries(1,2) and his, truly beautiful, 
+custom styled cross browser buttons(3).
 
-Tested in IE6, IE7, IE8, Safari, Firefox, and Chrome. 
+I've made a variant that implicitly styles any button element (with an inner
+sliding-doors(4) span) instead of relying on a button-class for explicit style.
 
-A lot of what I've done is based on previous work demoed in these articles, and their comments: 
+This fork also breaks away from full cross browser compatibility - because it's
+time to leave IE 6 behind us. But style will be maintained, in generally, across
+all the modern browsers currently available.
+
+This makes it again possible to use sprite-based background images for button
+graphics, and it generally reduces a bit of CSS in the process.
+
+There are now also "skins", or extensions that simply breaks up into extra CSS
+and image files. The files are organized in the following way:
+
+ Three required files for default Custom Buttons (Implicit):
+  
+     css/
+         button.css
+         ie-button.css
+     
+     img/
+         button.png
+         
+Theese three files will give the nice rounded look that Derek made. If you want
+to add styles or "skins" you need to add pairs of skin files. Don't forget to
+include the stylesheet on your HTML-page. Skin files are named like this:
+ 
+     css/button-<skin-name>.css
+     img/button-<skin-name>.png
+
+REFERENCES
+
+(1) http://derekdevries.com/ 
+(2) http://github.com/devrieda
+(3) http://github.com/devrieda/custom_buttons
+(4) http://www.alistapart.com/articles/slidingdoors/
+
+ORIGINAL NOTICE OF REFERENCES
 
 http://www.oscaralexander.com/tutorials/how-to-make-sexy-buttons-with-css.html
 http://stopdesign.com/archive/2009/02/04/recreating-the-button.html

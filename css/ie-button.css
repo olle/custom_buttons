@@ -1,0 +1,30 @@
+/** =SHARED BUTTON STYLES
+ ----------------------------------------------- */
+button,
+button[disabled]:hover { 
+    position: relative;
+    width: auto;
+    overflow: visible;
+	background-position: right -88px;
+}
+
+button span {
+    position: relative;
+    top: 1px;
+    margin-top: 1px;
+}
+
+button img {
+    margin-top: 1px;
+	position: relative;
+	top: -1px;
+}
+
+button:hover {
+	background-position: right -118px;
+}
+
+button:active {
+	background-position: right 148px;
+}
+

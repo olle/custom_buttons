@@ -1,0 +1,41 @@
+/** =DARK BUTTON STYLE
+----------------------------------------------- */
+
+button.dark {
+	color: #fff;
+	text-shadow: none;
+}
+
+button.dark[disabled],
+button[disabled].dark:hover {
+	color: #ccc;
+}
+
+button.dark,
+button[disabled].dark:hover {
+	background-image: url(../img/button-dark.png); 
+}
+
+button.dark span,
+button[disabled].dark:hover span {
+	text-shadow: none;
+	background-image: url(../img/button-dark.png);
+}
+
+button.dark:hover {
+	background-image: url(../img/button-dark.png); 
+}
+
+button.dark:hover span {
+	text-shadow: none;
+	background-image: url(../img/button-dark.png); 
+}
+
+button.dark:active {
+	background-image: url(../img/button-dark.png);
+}
+
+button.dark:active span {
+	text-shadow: none;
+	background-image: url(../img/button-dark.png); 
+}

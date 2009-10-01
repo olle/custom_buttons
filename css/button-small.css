@@ -1,0 +1,34 @@
+/** =SMALL BUTTON STYLE
+----------------------------------------------- */
+button.small,
+button[disabled].small:hover {
+	font-size: .7em;
+	padding-right: 10px; 
+	background-image: url(../img/button-small.png); 
+}
+
+button.small span,
+button[disabled].small:hover span { 
+	height: 14px; 
+	line-height: 14px;
+	padding-top: 3px;
+	padding-left: 10px;
+  	padding-bottom: 3px;
+	background-image: url(../img/button-small.png);
+}
+
+button.small:hover {
+	background-image: url(../img/button-small.png); 
+}
+
+button.small:hover span {
+	background-image: url(../img/button-small.png); 
+}
+
+button.small:active {
+	background-image: url(../img/button-small.png);
+}
+
+button.small:active span {
+	background-image: url(../img/button-small.png); 
+}
