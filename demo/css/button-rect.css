@@ -1,0 +1,32 @@
+/** =SQUARE BUTTON STYLE
+----------------------------------------------- */
+button.rect,
+button[disabled].rect:hover {
+	font-size: .7em;
+	padding-right: 10px; 
+	background-image: url(../img/button-rect.png); 
+}
+
+button.rect span,
+button[disabled].rect:hover span { 
+	height: 14px; 
+	line-height: 14px;
+	padding: 2px 0 4px 10px;
+	background-image: url(../img/button-rect.png);
+}
+
+button.rect:hover {
+	background-image: url(../img/button-rect.png); 
+}
+
+button.rect:hover span {
+	background-image: url(../img/button-rect.png); 
+}
+
+button.rect:active {
+	background-image: url(../img/button-rect.png);
+}
+
+button.rect:active span {
+	background-image: url(../img/button-rect.png); 
+}

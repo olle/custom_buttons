@@ -1,0 +1,51 @@
+/** =MINI BUTTON STYLE
+----------------------------------------------- */
+button.mini {
+	font-size: .56em;
+}
+
+button.mini span {
+	text-shadow: none;
+	color: #444;
+}
+
+button.mini span img {
+	height: 8px;
+	width: 8px;
+}
+
+button.mini.primary span {
+	color: #000;
+	font-weight: normal;
+}
+
+button.mini,
+button[disabled].mini:hover {
+	padding: 0 12px 0 0;
+	background-image: url(../img/button-mini.png); 
+}
+
+button.mini span,
+button[disabled].mini:hover span { 
+	height: 10px; 
+	line-height: 10px;
+	padding-top: 3px;
+  	padding-bottom: 3px;
+	background-image: url(../img/button-mini.png);
+}
+
+button.mini:hover {
+	background-image: url(../img/button-mini.png); 
+}
+
+button.mini:hover span {
+	background-image: url(../img/button-mini.png); 
+}
+
+button.mini:active {
+	background-image: url(../img/button-mini.png);
+}
+
+button.mini:active span {
+	background-image: url(../img/button-mini.png); 
+}

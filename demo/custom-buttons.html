@@ -1,0 +1,343 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <head>
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+        <title>(Implicit) Custom Buttons</title>
+        <link rel="stylesheet" type="text/css" href="css/button.css" media="screen" />
+        <link rel="stylesheet" type="text/css" href="css/button-small.css" media="screen" />
+        <link rel="stylesheet" type="text/css" href="css/button-mini.css" media="screen" />
+        <link rel="stylesheet" type="text/css" href="css/button-rect.css" media="screen" />
+        <link rel="stylesheet" type="text/css" href="css/button-rect-large.css" media="screen" />
+        <link rel="stylesheet" type="text/css" href="css/button-dark.css" media="screen" />
+        <!--[if lte IE 7]>
+            <link rel="stylesheet" type="text/css" href="css/ie-button.css" media="screen" />
+        <![endif]-->
+        <style type="text/css" id="demo-style">
+            body { margin: 0; padding: 10px 30px; font-family: "Lucida Grande", "Helvetica Neue", Geneva, Arial, Verdana, sanserif; background: #eee; }
+            h2 { font-size: 120%; margin-bottom: 3px; border-bottom: 3px solid #ddd; padding-bottom: 3px; }
+            code { position: absolute; left: 200px; margin-top: 5px; margin-left: 10px; color: #666; font-family: Monaco, Courier, "Courier New", monospace; font-size: 12px; }
+			.footer { border-top: 3px solid #ddd; clear: both; margin-top: 25px; }
+			fieldset { border: none; }
+			.warn { color: #d41c24; font-size: .9em; text-transform: uppercase; font-family: arial; font-weight: bold; }
+			#dark { background: #aaa; color: #fff; }
+			#dark code { color: #fff; }
+        </style>
+    </head>
+    <body>
+        <h2>Implicitly styled button elements and class variations.</h2>
+        <form action="" method="get">
+            <fieldset>
+                <button><span>Button</span></button>
+                <code>
+                    &lt;button&gt;&lt;span&gt;Button&lt;/span&gt;&lt;/button&gt;
+                </code>
+            </fieldset>
+			<fieldset>
+				<button type="submit"><span>Submit</span></button>
+				<code>
+					&lt;button type="submit"&gt;&lt;span&gt;Submit&lt;/span&gt;&lt;/button&gt;
+				</code>
+			</fieldset>
+			<fieldset>
+				<button disabled="disabled"><span>Disabled</span></button>
+				<code>
+					&lt;button disabled="disabled"&gt;&lt;span&gt;Disabled&lt;/span&gt;&lt;/button&gt;
+				</code>
+			</fieldset>
+			<fieldset>
+				<button class="primary"><span>Primary</span></button>
+				<code>
+					&lt;button class="primary"&gt;&lt;span&gt;Primary&lt;/span&gt;&lt;/button&gt;
+				</code>
+			</fieldset>
+			<h2>Icon or image button.</h2>
+			<fieldset>
+				<button><span><img src="img/icon.png" alt="" />Icon button</span></button>
+				<code>
+					&lt;button&gt;&lt;span&gt;&lt;img src="img/icon.png" alt="" /&gt;Icon button&lt;/span&gt;&lt;/button&gt;
+				</code>
+			</fieldset>
+			<fieldset>
+				<button type="submit"><span><img src="img/icon.png" alt="" />Submit</span></button>
+				<code>
+					&lt;button type="submit"&gt;&lt;span&gt;&lt;img src="img/icon.png" alt="" /&gt;Submit&lt;/span&gt;&lt;/button&gt;
+				</code>
+			</fieldset>
+			<fieldset>
+				<button disabled="disabled"><span><img src="img/icon.png" alt="" />Disabled</span></button>
+				<code>
+					&lt;button disabled="disabled"&gt;&lt;span&gt;&lt;img src="img/icon.png" alt="" /&gt;Disabled&lt;/span&gt;&lt;/button&gt;
+				</code>
+			</fieldset>
+			<fieldset>
+				<button class="primary"><span><img src="img/icon.png" alt="" />Primary</span></button>
+				<code>
+					&lt;button class="primary"&gt;&lt;span&gt;&lt;img src="img/icon.png" alt="" /&gt;Primary&lt;/span&gt;&lt;/button&gt;
+				</code>
+			</fieldset>
+        </form>
+		<h3>Skins:</h3>
+		<form method="get" action="">
+			<h2><tt>button-small.css</tt></h2>
+            <fieldset>
+                <button class="small"><span>Button</span></button>
+                <code>
+                    &lt;button class="small"&gt;&lt;span&gt;Button&lt;/span&gt;&lt;/button&gt;
+                </code>
+            </fieldset>
+			<fieldset>
+				<button type="submit" class="small"><span>Submit</span></button>
+				<code>
+					&lt;button type="submit" class="small"&gt;&lt;span&gt;Submit&lt;/span&gt;&lt;/button&gt;
+				</code>
+			</fieldset>
+			<fieldset>
+				<button disabled="disabled" class="small"><span>Disabled</span></button>
+				<code>
+					&lt;button disabled="disabled" class="small"&gt;&lt;span&gt;Disabled&lt;/span&gt;&lt;/button&gt;
+				</code>
+			</fieldset>
+			<fieldset>
+				<button class="primary small"><span>Primary</span></button>
+				<code>
+					&lt;button class="primary small"&gt;&lt;span&gt;Primary&lt;/span&gt;&lt;/button&gt;
+				</code>
+			</fieldset>	
+			<fieldset>
+				<button class="small"><span><img src="img/icon.png" alt="" />Icon button</span></button>
+				<code>
+					&lt;button class="small"&gt;&lt;span&gt;&lt;img src="img/icon.png" alt="" /&gt;Icon button&lt;/span&gt;&lt;/button&gt;
+				</code>
+			</fieldset>
+			<fieldset>
+				<button type="submit" class="small"><span><img src="img/icon.png" alt="" />Submit</span></button>
+				<code>
+					&lt;button type="submit" class="small"&gt;&lt;span&gt;&lt;img src="img/icon.png" alt="" /&gt;Submit&lt;/span&gt;&lt;/button&gt;
+				</code>
+			</fieldset>
+			<fieldset>
+				<button disabled="disabled" class="small"><span><img src="img/icon.png" alt="" />Disabled</span></button>
+				<code>
+					&lt;button disabled="disabled" class="small"&gt;&lt;span&gt;&lt;img src="img/icon.png" alt="" /&gt;Disabled&lt;/span&gt;&lt;/button&gt;
+				</code>
+			</fieldset>
+			<fieldset>
+				<button class="primary small"><span><img src="img/icon.png" alt="" />Primary</span></button>
+				<code>
+					&lt;button class="primary small" class="small"&gt;&lt;span&gt;&lt;img src="img/icon.png" alt="" /&gt;Primary&lt;/span&gt;&lt;/button&gt;
+				</code>
+			</fieldset>
+		</form>
+		<form method="get" action="">
+			<h2><tt>button-mini.css</tt></h2>
+            <fieldset>
+                <button class="mini"><span>Button</span></button>
+                <code>
+                    &lt;button class="mini"&gt;&lt;span&gt;Button&lt;/span&gt;&lt;/button&gt;
+                </code>
+            </fieldset>
+			<fieldset>
+				<button type="submit" class="mini"><span>Submit</span></button>
+				<code>
+					&lt;button type="submit" class="mini"&gt;&lt;span&gt;Submit&lt;/span&gt;&lt;/button&gt;
+				</code>
+			</fieldset>
+			<fieldset>
+				<button disabled="disabled" class="mini"><span>Disabled</span></button>
+				<code>
+					&lt;button disabled="disabled" class="mini"&gt;&lt;span&gt;Disabled&lt;/span&gt;&lt;/button&gt;
+				</code>
+			</fieldset>
+			<fieldset>
+				<button class="primary mini"><span>Primary</span></button>
+				<code>
+					&lt;button class="primary mini"&gt;&lt;span&gt;Primary&lt;/span&gt;&lt;/button&gt;
+				</code>
+			</fieldset>	
+			<fieldset>
+				<button class="mini"><span><img src="img/icon-mini.png" alt="" />Icon button</span></button>
+				<code>
+					&lt;button class="mini"&gt;&lt;span&gt;&lt;img src="img/icon-mini.png" alt="" /&gt;Icon button&lt;/span&gt;&lt;/button&gt;
+				</code>
+			</fieldset>
+			<fieldset>
+				<button type="submit" class="mini"><span><img src="img/icon-mini.png" alt="" />Submit</span></button>
+				<code>
+					&lt;button type="submit" class="mini"&gt;&lt;span&gt;&lt;img src="img/icon-mini.png" alt="" /&gt;Submit&lt;/span&gt;&lt;/button&gt;
+				</code>
+			</fieldset>
+			<fieldset>
+				<button disabled="disabled" class="mini"><span><img src="img/icon-mini.png" alt="" />Disabled</span></button>
+				<code>
+					&lt;button disabled="disabled" class="mini"&gt;&lt;span&gt;&lt;img src="img/icon-mini.png" alt="" /&gt;Disabled&lt;/span&gt;&lt;/button&gt;
+				</code>
+			</fieldset>
+			<fieldset>
+				<button class="primary mini"><span><img src="img/icon-mini.png" alt="" />Primary</span></button>
+				<code>
+					&lt;button class="primary mini" class="mini"&gt;&lt;span&gt;&lt;img src="img/icon-mini.png" alt="" /&gt;Primary&lt;/span&gt;&lt;/button&gt;
+				</code>
+			</fieldset>
+		</form>			
+		<form method="get" action="">
+			<h2><tt>button-rect.css</tt></h2>
+            <fieldset>
+                <button class="rect"><span>Button</span></button>
+                <code>
+                    &lt;button class="rect"&gt;&lt;span&gt;Button&lt;/span&gt;&lt;/button&gt;
+                </code>
+            </fieldset>
+			<fieldset>
+				<button type="submit" class="rect"><span>Submit</span></button>
+				<code>
+					&lt;button type="submit" class="rect"&gt;&lt;span&gt;Submit&lt;/span&gt;&lt;/button&gt;
+				</code>
+			</fieldset>
+			<fieldset>
+				<button disabled="disabled" class="rect"><span>Disabled</span></button>
+				<code>
+					&lt;button disabled="disabled" class="rect"&gt;&lt;span&gt;Disabled&lt;/span&gt;&lt;/button&gt;
+				</code>
+			</fieldset>
+			<fieldset>
+				<button class="primary rect"><span>Primary</span></button>
+				<code>
+					&lt;button class="primary rect"&gt;&lt;span&gt;Primary&lt;/span&gt;&lt;/button&gt;
+				</code>
+			</fieldset>	
+			<fieldset>
+				<button class="rect"><span><img src="img/icon.png" alt="" />Icon button</span></button>
+				<code>
+					&lt;button class="rect"&gt;&lt;span&gt;&lt;img src="img/icon.png" alt="" /&gt;Icon button&lt;/span&gt;&lt;/button&gt;
+				</code>
+			</fieldset>
+			<fieldset>
+				<button type="submit" class="rect"><span><img src="img/icon.png" alt="" />Submit</span></button>
+				<code>
+					&lt;button type="submit" class="rect"&gt;&lt;span&gt;&lt;img src="img/icon.png" alt="" /&gt;Submit&lt;/span&gt;&lt;/button&gt;
+				</code>
+			</fieldset>
+			<fieldset>
+				<button disabled="disabled" class="rect"><span><img src="img/icon.png" alt="" />Disabled</span></button>
+				<code>
+					&lt;button disabled="disabled" class="rect"&gt;&lt;span&gt;&lt;img src="img/icon.png" alt="" /&gt;Disabled&lt;/span&gt;&lt;/button&gt;
+				</code>
+			</fieldset>
+			<fieldset>
+				<button class="primary rect"><span><img src="img/icon.png" alt="" />Primary</span></button>
+				<code>
+					&lt;button class="primary rect" class="rect"&gt;&lt;span&gt;&lt;img src="img/icon.png" alt="" /&gt;Primary&lt;/span&gt;&lt;/button&gt;
+				</code>
+			</fieldset>
+		</form>
+		<form method="get" action="">
+			<h2><tt>button-rect-large.css</tt></h2>
+            <fieldset>
+                <button class="rect large"><span>Button</span></button>
+                <code>
+                    &lt;button class="rect large"&gt;&lt;span&gt;Button&lt;/span&gt;&lt;/button&gt;
+                </code>
+            </fieldset>
+			<fieldset>
+				<button type="submit" class="rect large"><span>Submit</span></button>
+				<code>
+					&lt;button type="submit" class="rect large"&gt;&lt;span&gt;Submit&lt;/span&gt;&lt;/button&gt;
+				</code>
+			</fieldset>
+			<fieldset>
+				<button disabled="disabled" class="rect large"><span>Disabled</span></button>
+				<code>
+					&lt;button disabled="disabled" class="rect large"&gt;&lt;span&gt;Disabled&lt;/span&gt;&lt;/button&gt;
+				</code>
+			</fieldset>
+			<fieldset>
+				<button class="primary rect large"><span>Primary</span></button>
+				<code>
+					&lt;button class="primary rect large"&gt;&lt;span&gt;Primary&lt;/span&gt;&lt;/button&gt;
+				</code>
+			</fieldset>	
+			<fieldset>
+				<button class="rect large"><span><img src="img/icon.png" alt="" />Icon button</span></button>
+				<code>
+					&lt;button class="rect large"&gt;&lt;span&gt;&lt;img src="img/icon.png" alt="" /&gt;Icon button&lt;/span&gt;&lt;/button&gt;
+				</code>
+			</fieldset>
+			<fieldset>
+				<button type="submit" class="rect large"><span><img src="img/icon.png" alt="" />Submit</span></button>
+				<code>
+					&lt;button type="submit" class="rect large"&gt;&lt;span&gt;&lt;img src="img/icon.png" alt="" /&gt;Submit&lt;/span&gt;&lt;/button&gt;
+				</code>
+			</fieldset>
+			<fieldset>
+				<button disabled="disabled" class="rect large"><span><img src="img/icon.png" alt="" />Disabled</span></button>
+				<code>
+					&lt;button disabled="disabled" class="rect large"&gt;&lt;span&gt;&lt;img src="img/icon.png" alt="" /&gt;Disabled&lt;/span&gt;&lt;/button&gt;
+				</code>
+			</fieldset>
+			<fieldset>
+				<button class="primary rect large"><span><img src="img/icon.png" alt="" />Primary</span></button>
+				<code>
+					&lt;button class="primary rect large" class="rect large"&gt;&lt;span&gt;&lt;img src="img/icon.png" alt="" /&gt;Primary&lt;/span&gt;&lt;/button&gt;
+				</code>
+			</fieldset>
+		</form>		
+		<form method="get" action="">
+			<h2><tt>button-dark.css</tt></h2>
+			<div id="dark">
+	            <fieldset>
+	                <button class="dark"><span>Button</span></button>
+	                <code>
+	                    &lt;button class="dark"&gt;&lt;span&gt;Button&lt;/span&gt;&lt;/button&gt;
+	                </code>
+	            </fieldset>
+				<fieldset>
+					<button type="submit" class="dark"><span>Submit</span></button>
+					<code>
+						&lt;button type="submit" class="dark"&gt;&lt;span&gt;Submit&lt;/span&gt;&lt;/button&gt;
+					</code>
+				</fieldset>
+				<fieldset>
+					<button disabled="disabled" class="dark"><span>Disabled</span></button>
+					<code>
+						&lt;button disabled="disabled" class="dark"&gt;&lt;span&gt;Disabled&lt;/span&gt;&lt;/button&gt;
+					</code>
+				</fieldset>
+				<fieldset>
+					<button class="primary dark"><span>Primary</span></button>
+					<code>
+						&lt;button class="primary dark"&gt;&lt;span&gt;Primary&lt;/span&gt;&lt;/button&gt;
+					</code>
+				</fieldset>	
+				<fieldset>
+					<button class="dark"><span><img src="img/icon.png" alt="" />Icon button</span></button>
+					<code>
+						&lt;button class="dark"&gt;&lt;span&gt;&lt;img src="img/icon.png" alt="" /&gt;Icon button&lt;/span&gt;&lt;/button&gt;
+					</code>
+				</fieldset>
+				<fieldset>
+					<button type="submit" class="dark"><span><img src="img/icon.png" alt="" />Submit</span></button>
+					<code>
+						&lt;button type="submit" class="dark"&gt;&lt;span&gt;&lt;img src="img/icon.png" alt="" /&gt;Submit&lt;/span&gt;&lt;/button&gt;
+					</code>
+				</fieldset>
+				<fieldset>
+					<button disabled="disabled" class="dark"><span><img src="img/icon.png" alt="" />Disabled</span></button>
+					<code>
+						&lt;button disabled="disabled" class="dark"&gt;&lt;span&gt;&lt;img src="img/icon.png" alt="" /&gt;Disabled&lt;/span&gt;&lt;/button&gt;
+					</code>
+				</fieldset>
+				<fieldset>
+					<button class="primary dark"><span><img src="img/icon.png" alt="" />Primary</span></button>
+					<code>
+						&lt;button class="primary dark" class="dark"&gt;&lt;span&gt;&lt;img src="img/icon.png" alt="" /&gt;Primary&lt;/span&gt;&lt;/button&gt;
+					</code>
+				</fieldset>
+			</div>
+		</form>
+        <div class="footer">
+            <p>
+                <a href="http://validator.w3.org/check?uri=referer"><img src="http://www.w3.org/Icons/valid-xhtml10" alt="Valid XHTML 1.0 Transitional" height="31" width="88" style="border: none;"/></a>
+            </p>
+        </div>
+    </body>
+</html>

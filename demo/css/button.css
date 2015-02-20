@@ -1,0 +1,92 @@
+/** =COMMON BUTTON STYLES
+ ----------------------------------------------- */
+button {
+    float: left;
+    margin: 0;
+    border: 0;
+    padding: 0 14px 0 0;
+	font: inherit;
+    font-size: .76em;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    outline: none;
+}
+
+button span {
+    position: relative;
+    display: block;
+    white-space: nowrap;
+    padding: 0 0 0 14px;
+	text-shadow: 1px 1px 0px #fff;
+}
+
+button:focus::-moz-focus-inner {
+    border-color: transparent !important;
+}
+
+button::-moz-focus-inner {
+    border: none;
+    padding: 0;
+}
+
+button span img {
+	margin-right: 1ex !important;
+}
+
+button img {
+	border: 0;
+	vertical-align: middle;
+}
+
+button.primary {
+	font-weight: bold;
+}
+
+button[disabled] {
+	cursor: default;
+}
+
+button[disabled] span {
+	text-shadow: 1px 1px 0px #fff;
+}
+
+button[disabled] span img {
+	filter: alpha(opacity=50);
+	-moz-opacity: 0.5;
+	-khtml-opacity: 0.5;
+	opacity: 0.5;
+}
+
+/** =ROUND BUTTON STYLES (default)
+----------------------------------------------- */
+button,
+button[disabled]:hover {
+	background: url(../img/button.png) right -90px no-repeat;
+}
+
+button span,
+button[disabled]:hover span { 
+	height: 15px; 
+	line-height: 15px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	background: url(../img/button.png) left 0px no-repeat;
+}
+
+button:hover {
+	background: url(../img/button.png) right -120px no-repeat;
+}
+
+button:hover span {
+	background: url(../img/button.png) left -30px no-repeat;
+}
+
+button:active {
+	background: url(../img/button.png) right -150px no-repeat;
+	-ms-background-position-y: 1px; /* ie8 hack */  
+}
+
+button:active span {
+	background: url(../img/button.png) left -60px no-repeat; 
+}
